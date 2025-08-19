@@ -1,0 +1,170 @@
+<resources>
+    <string name="app_name">OQ</string>
+    <string name="splachscreentxt1">"Smart money"</string>
+    <string name="splachscreentxt2">"Simple tools,Strong future"</string>
+    <string name="signup"><u>SIGN UP</u></string>
+    <string name="sign">Sign Up</string>
+    <string name="title_activity_dash_board">DashBoard</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_lock">Lock Phone</string>
+    <string name="menu_sign">Sign Out</string>
+    <string name="dashboardmsg">One Tap to Your Next Loan</string>
+
+    <string name="emi">EMI</string>
+    <string name="product">Product</string>
+    <string name="customer">Customer</string>
+    <string name="credit">Report</string>
+    <string name="emicalculation">Select Mobile</string>
+    <string name="emidetails">EMI Details</string>
+    <string name="forgetpass">Forget Password</string>
+    <string name="idverification">ID Verification</string>
+    <string name="biomatric">Biometric Kyc</string>
+    <string name="pancard">Pan Card</string>
+    <string name="aadhar">Aadhar Card</string>
+    <string name="clickdocument"><u>Upload</u></string>
+    <string name="aadharverify">Aadhaar Verification</string>
+    <string name="panarverify">Pan Verification</string>
+    <string name="aadhartitle">Please enter your 12-digit Aadhaar number and upload document for Verification</string>
+    <string name="panhint">Enter PAN number</string>
+    <string name="pancardtitle">Please enter your PAN number  for Verification</string>
+    <string name="newuserreg">Customer Verification</string>
+    <string name="paymentInfo">Payment Information</string>
+    <string name="mobilenumber">Please enter user 10 digit mobile number for Verification</string>
+    <string name="accept_term_condition">Accept Term and Condition</string>
+    <string name="referencedetails">Reference Details</string>
+    <string name="imeinumber">IMEI Number</string>
+    <string name="qrcode">QR Code</string>
+    <string name="terms_conditions">Terms &quot; Conditions</string>
+    <string name="cust">Customer</string>
+    <string name="retailer">Retailer</string>
+    <string name="chooserole">Choose your Role</string>
+    <string name="customerpro">Customer Profile</string>
+    <string name="reports">Reports</string>
+    <string name="makepayment">Make Payment</string>
+    <string name="customeremi"> EMI </string>
+    <string name="loandetails"> Loan Details </string>
+
+
+    <string-array name="accounttype">
+        <item>Select Account Type</item>
+        <item>Savings</item>
+        <item>Current</item>
+
+    </string-array>
+
+    <string-array name="reporttype">
+        <item>Pending</item>
+        <item>Approved</item>
+        <item>Rejected</item>
+    </string-array>
+
+
+    <string-array name="mobile_company_names">
+        <item>Apple</item>
+        <item>Samsung</item>
+        <item>OnePlus</item>
+        <item>Realme</item>
+    </string-array>
+
+    <string-array name="apple_models">
+        <item>iPhone 14</item>
+        <item>iPhone 15</item>
+        <item>iPhone 16 Pro</item>
+    </string-array>
+
+    <string-array name="samsung_models">
+        <item>Galaxy F36 5G</item>
+        <item>Galaxy S24</item>
+        <item>Galaxy M14</item>
+    </string-array>
+
+    <string-array name="oneplus_models">
+        <item>OnePlus 11</item>
+        <item>OnePlus 12</item>
+        <item>OnePlus Nord CE</item>
+    </string-array>
+
+    <string-array name="realme_models">
+        <item>Realme GT Neo 3</item>
+        <item>Realme Narzo 60</item>
+        <item>Realme C67</item>
+    </string-array>
+
+    <string-array name="paymentmode">
+        <item>UPI</item>
+        <item>Cash</item>
+        <item>Check</item>
+    </string-array>
+
+    <string-array name="loanids">
+        <item>LN202508022434</item>
+        <item>LN202508021234</item>
+        <item>LN202508021344</item>
+    </string-array>
+
+    <string-array name="NoOfEMI">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string name="sample_terms_text_customer">
+    I hereby confirm that I am a citizen of India and competent to give this declaration/undertaking and to execute and submit this application form and all other documents for the purpose of availing loan, creation of security, and representing generally for all the purposes mentioned/required.
+
+    I confirm that all the particulars and information given in the application form and otherwise in writing or over any contact option by me are true, correct, and complete, and no information has been withheld or suppressed.
+
+    I confirm that I am submitting this application after reading and fully understanding the terms and conditions of availing a loan from OQ Pay. I understand that OQ Pay is entitled to reject my application without assigning any reason.
+
+    I confirm that no insolvency proceedings are against me, and I have never been adjudicated insolvent. No suit for recovery of dues or criminal proceedings is pending against me. No person’s consent is required for availing the loan. The loan amount will not be used for gambling, lottery, races, or any other illegal purpose as prohibited by RBI or regulatory authorities.
+
+    I understand that OQ Pay offers different interest rates based on loan amount, tenure, down payment, payment history, credit score, income, documents provided, and other required information.
+
+    I confirm that I have issued post-dated cheques towards EMI repayment and authorize OQ Pay to present them on due dates.
+
+    The dealer confirms joint and several liability for loan repayment.
+
+    The address on my Aadhaar card is correct. Any communication sent there shall be deemed duly served.
+
+    Disputes arising from this agreement will be referred to a sole arbitrator appointed by the lender. Arbitration will be held in Nagpur, in English.
+
+    The dealer guarantees EMI payment.
+
+    You authorize OQ Pay to act upon instructions/applications sent via contact options (e.g., email, SMS) regarding your loans.
+
+    Interest rates are based on various borrower-related factors. You agree to abide by such assessments. Interest is calculated using a flat rate over the entire loan term and will be appropriated based on the monthly reducing balance.
+
+    If EMI is not paid, the lender may block the mobile phone until dues are cleared.
+
+    You should pay the monthly installment by the recommended date to ensure timely credit to your loan account.
+
+    All mentioned fees include applicable GST at 18% (integrated tax).
+
+    OQ Pay
+    AUTHORIZED SIGNATORY
+
+    Note: This is a computer-generated document and does not require a company signature.
+</string>
+
+    <string name="retailer_term_condition">
+
+    </string>
+
+    <string name="view_loan_details">View Loan Details</string>
+    <string name="loan_amount">Loan Amount</string>
+    <string name="_79_000">₹ 79,000</string>
+    <string name="emi_details">EMI Details</string>
+    <string name="make_payment">Make Payment</string>
+    <string name="submit">Submit</string>
+    <string name="exit">Exit</string>
+    <string name="are_you_sure_you_want_to_sign_out">Are you sure you want to sign out?</string>
+    <string name="emi_split_calculation">EMI Split Calculation</string>
+
+
+</resources>
