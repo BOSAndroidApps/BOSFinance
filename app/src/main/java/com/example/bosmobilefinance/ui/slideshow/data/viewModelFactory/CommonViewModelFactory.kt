@@ -1,9 +1,9 @@
-package com.example.theemiclub.ui.slideshow.data.viewModelFactory
+package com.example.bosmobilefinance.ui.slideshow.data.viewModelFactory
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.theemiclub.ui.slideshow.data.repository.AuthRepository
-import com.example.theemiclub.ui.slideshow.ui.viewmodel.AuthenticationViewModel
+import com.example.bosmobilefinance.ui.slideshow.data.repository.AuthRepository
+import com.example.bosmobilefinance.ui.slideshow.ui.viewmodel.AuthenticationViewModel
 
 class CommonViewModelFactory(private val repository: AuthRepository):ViewModelProvider.Factory {
 

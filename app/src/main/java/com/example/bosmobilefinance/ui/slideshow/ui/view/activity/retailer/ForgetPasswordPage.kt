@@ -1,4 +1,4 @@
-package com.example.theemiclub.ui.slideshow.ui.view.activity.retailer
+package com.example.bosmobilefinance.ui.slideshow.ui.view.activity.retailer
 
 import android.app.Dialog
 import android.content.Context
@@ -24,26 +24,23 @@ import android.widget.RelativeLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
-import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.core.view.WindowInsetsControllerCompat
 import androidx.lifecycle.ViewModelProvider
 import com.bos.payment.appName.network.RetrofitClient
-import com.example.theemiclub.R
-import com.example.theemiclub.databinding.ActivityForgetPasswordPageBinding
-import com.example.theemiclub.ui.slideshow.activity.LoginPage
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass.isInternetAvailable
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.ForgotPasswordReq
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.verification.SendOtpReq
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.VerifyOTPReq
-import com.example.theemiclub.ui.slideshow.data.repository.AuthRepository
-import com.example.theemiclub.ui.slideshow.data.viewModelFactory.CommonViewModelFactory
-import com.example.theemiclub.ui.slideshow.localdb.SharedPreference
-import com.example.theemiclub.ui.slideshow.ui.viewmodel.AuthenticationViewModel
-import com.example.theemiclub.ui.slideshow.utils.ApiStatus
+import com.example.bosmobilefinance.R
+import com.example.bosmobilefinance.databinding.ActivityForgetPasswordPageBinding
+import com.example.bosmobilefinance.ui.slideshow.activity.LoginPage
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass.isInternetAvailable
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.ForgotPasswordReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.verification.SendOtpReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.VerifyOTPReq
+import com.example.bosmobilefinance.ui.slideshow.data.repository.AuthRepository
+import com.example.bosmobilefinance.ui.slideshow.data.viewModelFactory.CommonViewModelFactory
+import com.example.bosmobilefinance.ui.slideshow.localdb.SharedPreference
+import com.example.bosmobilefinance.ui.slideshow.ui.viewmodel.AuthenticationViewModel
+import com.example.bosmobilefinance.ui.slideshow.utils.ApiStatus
 import com.google.gson.Gson
 
 class ForgetPasswordPage : AppCompatActivity() {

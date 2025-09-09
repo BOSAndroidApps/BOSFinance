@@ -1,4 +1,4 @@
-package com.example.theemiclub.ui.slideshow.data.model.loginsignup.reports
+package com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.reports
 
 import com.google.gson.annotations.SerializedName
 

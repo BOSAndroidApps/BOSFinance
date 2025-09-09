@@ -1,4 +1,4 @@
-package com.example.theemiclub.ui.slideshow.ui.view.activity.retailer
+package com.example.bosmobilefinance.ui.slideshow.ui.view.activity.retailer
 
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -13,17 +13,14 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
 import androidx.core.view.ViewCompat
-import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.core.view.WindowInsetsControllerCompat
-import com.example.theemiclub.R
-import com.example.theemiclub.databinding.ActivityImeidetailsPageBinding
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass.ImeiNumber1
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass.ImeiNumber1SealPhotoPath
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass.ImeiNumber2
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass.ImeiNumber2SealPhotoPath
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass.ImeiNumberPhotoPath
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass.Invoive_Path
+import com.example.bosmobilefinance.databinding.ActivityImeidetailsPageBinding
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass.ImeiNumber1
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass.ImeiNumber1SealPhotoPath
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass.ImeiNumber2
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass.ImeiNumber2SealPhotoPath
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass.ImeiNumberPhotoPath
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass.Invoive_Path
 import java.io.File
 
 class IMEIDetailsPage : AppCompatActivity() {

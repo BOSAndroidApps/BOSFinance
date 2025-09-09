@@ -1,21 +1,16 @@
-package com.example.theemiclub.ui.slideshow.ui.view.activity
+package com.example.bosmobilefinance.ui.slideshow.ui.view.activity
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
-import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.core.view.WindowInsetsControllerCompat
-import com.example.theemiclub.R
-import com.example.theemiclub.databinding.ActivityChooseYourRolePageBinding
-import com.example.theemiclub.ui.slideshow.activity.LoginPage
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass.Customer
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass.Retailer
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass.loginType
-import com.example.theemiclub.ui.slideshow.ui.view.activity.retailer.NewCustomerRegistrationPage
+import com.example.bosmobilefinance.R
+import com.example.bosmobilefinance.databinding.ActivityChooseYourRolePageBinding
+import com.example.bosmobilefinance.ui.slideshow.activity.LoginPage
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass.Customer
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass.Retailer
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass.loginType
 
 class ChooseYourRolePage : AppCompatActivity() {
    lateinit var binding : ActivityChooseYourRolePageBinding

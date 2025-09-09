@@ -1,4 +1,4 @@
-package com.example.theemiclub.ui.slideshow.ui.view.activity.retailer
+package com.example.bosmobilefinance.ui.slideshow.ui.view.activity.retailer
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,13 +6,10 @@ import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
-import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.core.view.WindowInsetsControllerCompat
-import com.example.theemiclub.R
-import com.example.theemiclub.databinding.ActivityEmicalculationBinding
+import com.example.bosmobilefinance.R
+import com.example.bosmobilefinance.databinding.ActivityEmicalculationBinding
 
 class EMICalculationPage : AppCompatActivity() {
     lateinit var binding : ActivityEmicalculationBinding

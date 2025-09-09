@@ -1,13 +1,12 @@
-package com.example.theemiclub
+package com.example.bosmobilefinance
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.theemiclub.databinding.ActivityCongratulationPageBinding
-import com.example.theemiclub.ui.slideshow.activity.DashBoard
+import com.example.bosmobilefinance.databinding.ActivityCongratulationPageBinding
+import com.example.bosmobilefinance.ui.slideshow.activity.DashBoard
 
 class CongratulationPage : AppCompatActivity() {
     lateinit var binding:ActivityCongratulationPageBinding

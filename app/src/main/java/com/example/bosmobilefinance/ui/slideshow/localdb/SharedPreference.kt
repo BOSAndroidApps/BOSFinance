@@ -1,12 +1,8 @@
-package com.example.theemiclub.ui.slideshow.localdb
+package com.example.bosmobilefinance.ui.slideshow.localdb
 
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.SharedPreferences
-import android.os.Build
-import androidx.annotation.RequiresApi
-import com.google.gson.Gson
-import com.google.gson.reflect.TypeToken
 
 open class SharedPreference(mContext: Context) {
     val prefFile = mContext.packageName

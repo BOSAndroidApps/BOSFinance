@@ -1,18 +1,18 @@
-package com.example.theemiclub.ui.slideshow.adapter
+package com.example.bosmobilefinance.ui.slideshow.adapter
 
 import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.theemiclub.databinding.LoandetailesItemlayoutBinding
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.CustomerDataItem
+import com.example.bosmobilefinance.databinding.LoandetailesItemlayoutBinding
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.CustomerDataItem
 
-import com.example.theemiclub.ui.slideshow.localdb.SharedPreference
-import com.example.theemiclub.ui.slideshow.ui.view.activity.customer.EmiLoanDetailPage
-import com.example.theemiclub.ui.slideshow.ui.view.activity.customer.EmiLoanDetailPage.Companion.LoanId
-import com.example.theemiclub.ui.slideshow.ui.view.activity.customer.EmiLoanDetailPage.Companion.customerCode
+import com.example.bosmobilefinance.ui.slideshow.localdb.SharedPreference
+import com.example.bosmobilefinance.ui.slideshow.ui.view.activity.customer.EmiLoanDetailPage
+import com.example.bosmobilefinance.ui.slideshow.ui.view.activity.customer.EmiLoanDetailPage.Companion.LoanId
+import com.example.bosmobilefinance.ui.slideshow.ui.view.activity.customer.EmiLoanDetailPage.Companion.customerCode
 
 class CustomerEMIDetailsAdapter( var context:Context,var customerLoanEmiDetailsList : MutableList<CustomerDataItem?>?): RecyclerView.Adapter<CustomerEMIDetailsAdapter.ViewHolder>() {
 

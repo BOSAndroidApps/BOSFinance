@@ -1,21 +1,22 @@
-package com.example.theemiclub.ui.slideshow.ui.viewmodel
+package com.example.bosmobilefinance.ui.slideshow.ui.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.liveData
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.CustomerLoanEmiReceiveReq
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.ForgotPasswordReq
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.GetCustomerLoanDetailsReq
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.GetEMISplitDetlailsReq
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.LoanCreatedReq
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.LoginReq
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.RegistrationReq
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.verification.SendOtpReq
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.VerifyOTPReq
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.reports.GetReportsReq
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.verification.AadharVerificationReq
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.verification.PanVerificationReq
-import com.example.theemiclub.ui.slideshow.data.repository.AuthRepository
-import com.example.theemiclub.ui.slideshow.utils.ApiResponse
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.CustomerLoanEmiReceiveReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.ForgotPasswordReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.GetCustomerLoanDetailsReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.GetEMISplitDetlailsReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.LoanCreatedReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.LoginReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.RegistrationReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.verification.SendOtpReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.VerifyOTPReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.cibilscore.CibilScoreReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.reports.GetReportsReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.verification.AadharVerificationReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.verification.PanVerificationReq
+import com.example.bosmobilefinance.ui.slideshow.data.repository.AuthRepository
+import com.example.bosmobilefinance.ui.slideshow.utils.ApiResponse
 import kotlinx.coroutines.Dispatchers
 
 class AuthenticationViewModel (private val repository: AuthRepository):ViewModel(){
@@ -137,7 +138,7 @@ class AuthenticationViewModel (private val repository: AuthRepository):ViewModel
             emit(ApiResponse.error(data = null, message = exception.message?: "Error Occurred!"))
         }
     }
-        //
+
 
     fun getAadharVerificationReq(req: AadharVerificationReq) = liveData(Dispatchers.IO) {
         emit(ApiResponse.loading(data = null))
@@ -148,7 +149,8 @@ class AuthenticationViewModel (private val repository: AuthRepository):ViewModel
             emit(ApiResponse.error(data = null, message = exception.message?: "Error Occurred!"))
         }
     }
-    //
+
+
 
     fun getReportsReq(req: GetReportsReq) = liveData(Dispatchers.IO) {
         emit(ApiResponse.loading(data = null))
@@ -159,5 +161,8 @@ class AuthenticationViewModel (private val repository: AuthRepository):ViewModel
             emit(ApiResponse.error(data = null, message = exception.message?: "Error Occurred!"))
         }
     }
+
+
+
 
 }

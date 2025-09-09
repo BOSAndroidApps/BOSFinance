@@ -21,6 +21,7 @@
             android:layout_width="@dimen/_200sdp"
             android:layout_height="@dimen/_200sdp"
             android:src="@drawable/congressimage"/>
+
         <TextView
             android:id="@+id/appcodeid"
             android:layout_width="wrap_content"
@@ -29,6 +30,7 @@
             android:textColor="@color/black"
             android:textSize="@dimen/_13ssp"
             android:fontFamily="@font/inter_bold"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

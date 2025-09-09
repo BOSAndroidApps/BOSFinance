@@ -1,34 +1,25 @@
-package com.example.theemiclub.ui.slideshow.ui.view.activity.customer
+package com.example.bosmobilefinance.ui.slideshow.ui.view.activity.customer
 
-import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.util.Log
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
-import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.core.view.WindowInsetsControllerCompat
 import androidx.lifecycle.ViewModelProvider
 import com.bos.payment.appName.network.RetrofitClient
-import com.example.theemiclub.CongratulationPage
-import com.example.theemiclub.R
-import com.example.theemiclub.databinding.ActivityCustomerEmipageBinding
-import com.example.theemiclub.ui.slideshow.adapter.CustomerEMIDetailsAdapter
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass.isInternetAvailable
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.CustomerDataItem
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.GetCustomerLoanDetailsReq
-import com.example.theemiclub.ui.slideshow.data.repository.AuthRepository
-import com.example.theemiclub.ui.slideshow.data.viewModelFactory.CommonViewModelFactory
-import com.example.theemiclub.ui.slideshow.localdb.SharedPreference
-import com.example.theemiclub.ui.slideshow.ui.view.activity.retailer.MobileSelectionActivity.Companion.FilterDataList
-import com.example.theemiclub.ui.slideshow.ui.view.activity.retailer.MobileSelectionActivity.Companion.MobileDataList
-import com.example.theemiclub.ui.slideshow.ui.viewmodel.AuthenticationViewModel
-import com.example.theemiclub.ui.slideshow.utils.ApiStatus
+import com.example.bosmobilefinance.databinding.ActivityCustomerEmipageBinding
+import com.example.bosmobilefinance.ui.slideshow.adapter.CustomerEMIDetailsAdapter
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass.isInternetAvailable
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.CustomerDataItem
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.GetCustomerLoanDetailsReq
+import com.example.bosmobilefinance.ui.slideshow.data.repository.AuthRepository
+import com.example.bosmobilefinance.ui.slideshow.data.viewModelFactory.CommonViewModelFactory
+import com.example.bosmobilefinance.ui.slideshow.localdb.SharedPreference
+import com.example.bosmobilefinance.ui.slideshow.ui.viewmodel.AuthenticationViewModel
+import com.example.bosmobilefinance.ui.slideshow.utils.ApiStatus
 import com.google.gson.Gson
 
 class CustomerEMIPage : AppCompatActivity() {

@@ -1,4 +1,4 @@
-package com.example.theemiclub.ui.slideshow.activity
+package com.example.bosmobilefinance.ui.slideshow.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,10 +6,10 @@ import android.os.Handler
 import android.os.Looper
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.example.theemiclub.databinding.SplashMainBinding
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass
-import com.example.theemiclub.ui.slideshow.localdb.SharedPreference
-import com.example.theemiclub.ui.slideshow.ui.view.activity.ChooseYourRolePage
+import com.example.bosmobilefinance.databinding.SplashMainBinding
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass
+import com.example.bosmobilefinance.ui.slideshow.localdb.SharedPreference
+import com.example.bosmobilefinance.ui.slideshow.ui.view.activity.ChooseYourRolePage
 
 
 class SplashScreen : AppCompatActivity() {

@@ -1,30 +1,32 @@
 package com.bos.payment.appName.network
 
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.CustomerLoanEmiReceiveReq
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.CustomerLoanEmiResp
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.CustomerMakePaymentResp
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.CustomreLoanEmiReceiverResp
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.EmiSplitRes
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.ForgotPasswordReq
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.GetAllMobileDetailsListRes
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.GetCustomerLoanDetailsReq
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.GetEMISplitDetlailsReq
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.reports.GetReportsReq
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.LoanCreatedReq
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.LoanCreatedResp
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.LoginReq
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.RegisterCustomerResp
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.RegistrationReq
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.RegistrationRes
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.verification.SendOtpReq
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.verification.SendOtpRes
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.SmsResponse
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.VerifyOTPReq
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.reports.ReportsResp
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.verification.AadharVerificationReq
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.verification.AadharVerificationResp
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.verification.PanVerificationReq
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.verification.PanVerificationResp
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.CustomerLoanEmiReceiveReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.CustomerLoanEmiResp
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.CustomerMakePaymentResp
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.CustomreLoanEmiReceiverResp
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.EmiSplitRes
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.ForgotPasswordReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.GetAllMobileDetailsListRes
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.GetCustomerLoanDetailsReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.GetEMISplitDetlailsReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.reports.GetReportsReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.LoanCreatedReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.LoanCreatedResp
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.LoginReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.RegisterCustomerResp
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.RegistrationReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.RegistrationRes
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.verification.SendOtpReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.verification.SendOtpRes
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.SmsResponse
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.VerifyOTPReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.cibilscore.CibilScoreReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.cibilscore.CibilScroeResp
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.reports.ReportsResp
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.verification.AadharVerificationReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.verification.AadharVerificationResp
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.verification.PanVerificationReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.verification.PanVerificationResp
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import retrofit2.Response
@@ -235,10 +237,15 @@ interface ApiInterface {
                                     @Query("message") message : String): Response<SmsResponse>?
 
 
-
     // for customer and retailer both showing reports
     @POST("api/V1/OQFinance/GetLoanDetailsRetailerWise")
     suspend fun getReports(@Body req : GetReportsReq): Response<ReportsResp>?
+
+
+
+   // cibil api for getting cibil score...............
+    @POST("api/AOP/CreditAnalytics/Report")
+    suspend fun getcibilscore(@Body req : CibilScoreReq): Response<CibilScroeResp>?
 
 
 }

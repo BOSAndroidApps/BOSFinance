@@ -1,60 +1,80 @@
 package com.example.bosmobilefinance.ui.slideshow.ui.view.activity.retailer.cibilreportsfragment
 
+import android.graphics.Color
+import android.graphics.Typeface
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.bosmobilefinance.R
+import com.example.bosmobilefinance.databinding.FragmentBureauScoreBinding
+import com.github.mikephil.charting.data.PieData
+import com.github.mikephil.charting.data.PieDataSet
+import com.github.mikephil.charting.data.PieEntry
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [BureauScore.newInstance] factory method to
- * create an instance of this fragment.
- */
 class BureauScore : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+     lateinit var binding : FragmentBureauScoreBinding
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+     companion object{
+          var userScore : Float = 0f
+
+     }
+
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_bureau_score, container, false)
+        binding = FragmentBureauScoreBinding.inflate(layoutInflater,container,false)
+        initView()
+        return binding.root
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment BureauScore.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            BureauScore().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+
+
+    fun  initView(){
+
+        // Standard CIBIL ranges
+        val entries = ArrayList<PieEntry>()
+        entries.add(PieEntry(250f, "300–549 Poor"))       // Poor
+        entries.add(PieEntry(100f, "550–649 Fair"))       // Fair
+        entries.add(PieEntry(100f, "650–749 Good"))       // Good
+        entries.add(PieEntry(151f, "750–900 Excellent"))  // Excellent
+
+        // Colors for each range
+        val colors = listOf(
+            Color.RED,        // Poor
+            Color.parseColor("#FF9800"), // Good (Orange)
+            Color.parseColor("#FFC107"), // Very Good (Yellow)
+            Color.parseColor("#4CAF50")  // Excellent (Green)
+        )
+
+
+        val dataSet = PieDataSet(entries, "CIBIL Score Ranges")
+        dataSet.colors = colors
+        dataSet.valueTextSize = 12f
+        dataSet.valueTextColor = Color.BLACK
+        dataSet.setDrawValues(false)
+
+        val data = PieData(dataSet)
+
+        binding.cibilPieChart.data = data
+
+
+        binding.cibilPieChart.centerText = "Score\n$userScore"
+        binding.cibilPieChart.setCenterTextSize(18f)
+
+        // Remove description & legend
+        binding.cibilPieChart.description.isEnabled = false
+        binding.cibilPieChart.legend.isEnabled = true
+        binding.cibilPieChart.setUsePercentValues(false)
+        binding.cibilPieChart.setEntryLabelTextSize(10f)
+        binding.cibilPieChart.setEntryLabelTypeface(Typeface.DEFAULT_BOLD)
+
+        // Animate
+        binding.cibilPieChart.animateY(1000)
+        binding.cibilPieChart.invalidate()
+
+
     }
+
 }

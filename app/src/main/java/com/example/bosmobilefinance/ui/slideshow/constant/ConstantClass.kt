@@ -1,4 +1,4 @@
-package com.example.theemiclub.ui.slideshow.constant
+package com.example.bosmobilefinance.ui.slideshow.constant
 
 import android.app.Dialog
 import android.content.Context
@@ -6,7 +6,6 @@ import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
-import android.location.Geocoder
 import android.media.MediaScannerConnection
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
@@ -15,30 +14,20 @@ import android.os.Build
 import android.os.Environment
 import android.os.Handler
 import android.os.Looper
-import android.provider.MediaStore
 import android.provider.Settings
 import android.util.Base64
-import android.util.Log
 import android.util.Patterns
 import android.view.ActionMode
 import android.view.Menu
 import android.view.MenuItem
-import android.view.MotionEvent
 import android.view.View
 import android.view.ViewGroup
 import android.view.Window
 import android.view.WindowManager
-import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
-import android.widget.ImageView
-import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.annotation.RequiresApi
-import com.example.theemiclub.R
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
+import com.example.bosmobilefinance.R
 import okhttp3.Call
 import okhttp3.Callback
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
@@ -52,8 +41,6 @@ import java.io.ByteArrayOutputStream
 import java.io.File
 import java.io.FileOutputStream
 import java.io.IOException
-import java.net.HttpURLConnection
-import java.net.URL
 import java.text.SimpleDateFormat
 import java.time.LocalDateTime
 import java.time.ZoneOffset
@@ -69,6 +56,7 @@ object ConstantClass {
      const val BASE_URL = "https://api.oqpay.in/"
      const val SMS_BASE_URL = "http://web.adcruxmedia.in/"
      const val PAN_BASE_URL = "https://api.aopay.in/"
+
 
 
      const val SMS_API_KEY = "KBSxc26XqjoiR7SA"

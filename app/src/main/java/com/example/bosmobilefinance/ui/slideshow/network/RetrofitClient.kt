@@ -1,6 +1,6 @@
 package com.bos.payment.appName.network
 
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass
 import com.google.gson.GsonBuilder
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
@@ -47,6 +47,7 @@ object RetrofitClient {
             .build()
     }
 
+
     private fun getAllInstancePAN(): Retrofit{
         // Create OkHttpClient with 1-minute timeout settings
         val okHttpClient = OkHttpClient.Builder()
@@ -63,6 +64,7 @@ object RetrofitClient {
             .addConverterFactory(GsonConverterFactory.create(GsonBuilder().setLenient().create()))
             .build()
     }
+
 
 
     val apiInterface: ApiInterface = getAllInstance().create(ApiInterface::class.java)

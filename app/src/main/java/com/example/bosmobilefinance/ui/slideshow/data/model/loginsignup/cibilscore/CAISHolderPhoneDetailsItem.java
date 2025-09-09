@@ -20,7 +20,7 @@ public class CAISHolderPhoneDetailsItem{
 	private String telephoneType;
 
 	@SerializedName("EMailId")
-	private Object eMailId;
+	private String eMailId;
 
 	public Object getTelephoneExtension(){
 		return telephoneExtension;
@@ -42,7 +42,7 @@ public class CAISHolderPhoneDetailsItem{
 		return telephoneType;
 	}
 
-	public Object getEMailId(){
+	public String getEMailId(){
 		return eMailId;
 	}
 }

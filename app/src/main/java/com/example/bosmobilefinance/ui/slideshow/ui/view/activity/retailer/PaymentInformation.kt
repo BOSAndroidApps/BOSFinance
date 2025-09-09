@@ -1,28 +1,23 @@
-package com.example.theemiclub.ui.slideshow.ui.view.activity.retailer
+package com.example.bosmobilefinance.ui.slideshow.ui.view.activity.retailer
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
-import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
-import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.core.view.WindowInsetsControllerCompat
-import com.example.theemiclub.R
-import com.example.theemiclub.databinding.ActivityPaymentInformationBinding
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass.AccountNumber
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass.AccountType
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass.BankIFSCCode
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass.BankName
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass.BranchName
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass.RefAddress
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass.RefName
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass.RefRelationShip
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass.RefmobileNo
+import com.example.bosmobilefinance.R
+import com.example.bosmobilefinance.databinding.ActivityPaymentInformationBinding
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass.AccountNumber
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass.AccountType
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass.BankIFSCCode
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass.BankName
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass.BranchName
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass.RefAddress
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass.RefName
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass.RefRelationShip
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass.RefmobileNo
 
 class PaymentInformation : AppCompatActivity() {
     lateinit var  binding : ActivityPaymentInformationBinding

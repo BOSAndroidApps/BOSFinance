@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.theemiclub"
+    namespace = "com.example.bosmobilefinance"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.theemiclub"
+        applicationId = "com.example.bosmobilefinance"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -57,11 +57,14 @@ android {
 dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
+
+
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.sdp.android)
     implementation(libs.ssp.android)
+
     implementation(libs.androidx.lifecycle.livedata.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.androidx.navigation.fragment.ktx)
@@ -72,6 +75,8 @@ dependencies {
     implementation(libs.okhttp)
     implementation(libs.logging.interceptor)
     implementation(libs.converter.scalars)
+    implementation(libs.mpandroidchart)
+
 
     implementation(libs.lottie)
     implementation(libs.glide)
@@ -79,11 +84,13 @@ dependencies {
     implementation(libs.androidx.camera.camera2)
     implementation(libs.androidx.camera.lifecycle)
     implementation(libs.androidx.camera.view)
-
     implementation(libs.androidx.navigation.ui.ktx)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+
 
 
 

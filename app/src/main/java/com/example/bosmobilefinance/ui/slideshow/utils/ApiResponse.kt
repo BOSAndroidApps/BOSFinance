@@ -1,4 +1,4 @@
-package com.example.theemiclub.ui.slideshow.utils
+package com.example.bosmobilefinance.ui.slideshow.utils
 
 data class ApiResponse<out T>(val apiStatus: ApiStatus, val data: T?, val message: String?) {
     companion object {

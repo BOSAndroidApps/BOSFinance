@@ -1,20 +1,12 @@
-package com.example.theemiclub.ui.slideshow.adapter
+package com.example.bosmobilefinance.ui.slideshow.adapter
 
 import android.content.Context
-import android.content.Intent
-import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
-import com.example.theemiclub.R
-import com.example.theemiclub.databinding.MobilelistitemlayoutBinding
-import com.example.theemiclub.databinding.RetailersReportsLayoutBinding
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass.formatDateToFullMonth
-import com.example.theemiclub.ui.slideshow.ui.view.activity.retailer.EMICalculationDetailsPage
-import com.example.theemiclub.ui.slideshow.ui.view.activity.retailer.EMICalculationDetailsPage.Companion.MobileData
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.DataItem
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.reports.ReportsDataItem
+import com.example.bosmobilefinance.databinding.RetailersReportsLayoutBinding
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass.formatDateToFullMonth
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.reports.ReportsDataItem
 
 class RetailerReportListAdapter(private val  ReportsDataList : MutableList<ReportsDataItem> = mutableListOf(), var context:Context): RecyclerView.Adapter<RetailerReportListAdapter.ViewHolder>() {
 

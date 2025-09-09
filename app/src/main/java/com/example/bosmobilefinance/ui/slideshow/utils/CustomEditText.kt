@@ -1,4 +1,4 @@
-package com.example.theemiclub.ui.slideshow.utils
+package com.example.bosmobilefinance.ui.slideshow.utils
 
 import android.content.Context
 import android.text.InputType

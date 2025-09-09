@@ -1,27 +1,26 @@
-package com.example.theemiclub.ui.slideshow.ui.view.activity.customer
+package com.example.bosmobilefinance.ui.slideshow.ui.view.activity.customer
 
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.ViewModelProvider
 import com.bos.payment.appName.network.RetrofitClient
-import com.example.theemiclub.R
-import com.example.theemiclub.databinding.ActivityCustomerReportsPageBinding
-import com.example.theemiclub.ui.slideshow.adapter.RetailerReportListAdapter
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.reports.GetReportsReq
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.reports.ReportsDataItem
-import com.example.theemiclub.ui.slideshow.data.repository.AuthRepository
-import com.example.theemiclub.ui.slideshow.data.viewModelFactory.CommonViewModelFactory
-import com.example.theemiclub.ui.slideshow.localdb.SharedPreference
-import com.example.theemiclub.ui.slideshow.ui.viewmodel.AuthenticationViewModel
-import com.example.theemiclub.ui.slideshow.utils.ApiStatus
+import com.example.bosmobilefinance.R
+import com.example.bosmobilefinance.databinding.ActivityCustomerReportsPageBinding
+import com.example.bosmobilefinance.ui.slideshow.adapter.RetailerReportListAdapter
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.reports.GetReportsReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.reports.ReportsDataItem
+import com.example.bosmobilefinance.ui.slideshow.data.repository.AuthRepository
+import com.example.bosmobilefinance.ui.slideshow.data.viewModelFactory.CommonViewModelFactory
+import com.example.bosmobilefinance.ui.slideshow.localdb.SharedPreference
+import com.example.bosmobilefinance.ui.slideshow.ui.viewmodel.AuthenticationViewModel
+import com.example.bosmobilefinance.ui.slideshow.utils.ApiStatus
 import com.google.gson.Gson
 
 class CustomerReportsPage : AppCompatActivity() {

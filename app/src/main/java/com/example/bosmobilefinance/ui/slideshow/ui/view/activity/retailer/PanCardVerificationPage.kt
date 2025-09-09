@@ -1,4 +1,4 @@
-package com.example.theemiclub.ui.slideshow.ui.view.activity.retailer
+package com.example.bosmobilefinance.ui.slideshow.ui.view.activity.retailer
 
 import android.content.pm.PackageManager
 import android.net.Uri
@@ -13,25 +13,22 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
 import androidx.core.view.ViewCompat
-import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.core.view.WindowInsetsControllerCompat
 import androidx.lifecycle.ViewModelProvider
 import com.bos.payment.appName.network.RetrofitClient
-import com.example.theemiclub.R
-import com.example.theemiclub.databinding.ActivityPanCardVerificationPageBinding
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass.CheckOnlineOrOffline
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass.PanFrontImageUri
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass.PanNumber
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass.PanNumberVerified
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass.saveImageToCache
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.verification.PanVerificationReq
-import com.example.theemiclub.ui.slideshow.data.repository.AuthRepository
-import com.example.theemiclub.ui.slideshow.data.viewModelFactory.CommonViewModelFactory
-import com.example.theemiclub.ui.slideshow.localdb.SharedPreference
-import com.example.theemiclub.ui.slideshow.ui.viewmodel.AuthenticationViewModel
-import com.example.theemiclub.ui.slideshow.utils.ApiStatus
+import com.example.bosmobilefinance.databinding.ActivityPanCardVerificationPageBinding
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass.CheckOnlineOrOffline
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass.PanFrontImageUri
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass.PanNumber
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass.PanNumberVerified
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass.saveImageToCache
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.verification.PanVerificationReq
+import com.example.bosmobilefinance.ui.slideshow.data.repository.AuthRepository
+import com.example.bosmobilefinance.ui.slideshow.data.viewModelFactory.CommonViewModelFactory
+import com.example.bosmobilefinance.ui.slideshow.localdb.SharedPreference
+import com.example.bosmobilefinance.ui.slideshow.ui.viewmodel.AuthenticationViewModel
+import com.example.bosmobilefinance.ui.slideshow.utils.ApiStatus
 import com.google.gson.Gson
 import java.io.File
 

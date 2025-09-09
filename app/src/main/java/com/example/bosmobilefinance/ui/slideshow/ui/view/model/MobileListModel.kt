@@ -1,4 +1,4 @@
-package com.example.theemiclub.ui.slideshow.ui.view.model
+package com.example.bosmobilefinance.ui.slideshow.ui.view.model
 
 data class MobileListModel(
     var MobileIcon:Int,

@@ -1,18 +1,19 @@
-package com.example.theemiclub.ui.slideshow.data.repository
+package com.example.bosmobilefinance.ui.slideshow.data.repository
 
 import com.bos.payment.appName.network.ApiInterface
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.CustomerLoanEmiReceiveReq
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.ForgotPasswordReq
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.GetCustomerLoanDetailsReq
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.GetEMISplitDetlailsReq
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.LoanCreatedReq
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.LoginReq
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.RegistrationReq
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.verification.SendOtpReq
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.VerifyOTPReq
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.reports.GetReportsReq
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.verification.AadharVerificationReq
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.verification.PanVerificationReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.CustomerLoanEmiReceiveReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.ForgotPasswordReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.GetCustomerLoanDetailsReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.GetEMISplitDetlailsReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.LoanCreatedReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.LoginReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.RegistrationReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.verification.SendOtpReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.VerifyOTPReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.cibilscore.CibilScoreReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.reports.GetReportsReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.verification.AadharVerificationReq
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.verification.PanVerificationReq
 
 class AuthRepository(private val apiInterface: ApiInterface) {
 
@@ -41,6 +42,8 @@ class AuthRepository(private val apiInterface: ApiInterface) {
   suspend fun getAadharVerificationReq(req: AadharVerificationReq) = apiInterface.getAadharVarification(req)
 
   suspend fun getReportsReq(req: GetReportsReq) = apiInterface.getReports(req)
+
+
 
 
 }

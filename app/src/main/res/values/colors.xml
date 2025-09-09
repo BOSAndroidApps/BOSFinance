@@ -43,4 +43,12 @@
     <color name="red">#F02E2E</color>
 
 
+
+    <color name="purple_200">#0F9D58</color>
+    <color name="purple_500">#0F9D58</color>
+    <color name="purple_700">#0F9D58</color>
+    <color name="button_color">#1E573B</color>
+
+
+
 </resources>

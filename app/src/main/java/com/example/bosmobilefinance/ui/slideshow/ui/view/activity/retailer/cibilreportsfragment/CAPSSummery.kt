@@ -6,55 +6,36 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.bosmobilefinance.R
+import com.example.bosmobilefinance.databinding.FragmentCAISBinding
+import com.example.bosmobilefinance.databinding.FragmentCAPSSummeryBinding
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [CAPSSummery.newInstance] factory method to
- * create an instance of this fragment.
- */
 class CAPSSummery : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+   lateinit var binding : FragmentCAPSSummeryBinding
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+
+   companion object{
+       lateinit var  Last7Days :String
+       lateinit var  Last30Days :String
+       lateinit var  Last90Days :String
+       lateinit var  Last180Days :String
+   }
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_c_a_p_s_summery, container, false)
+        binding= FragmentCAPSSummeryBinding.inflate(inflater, container, false)
+        init()
+        return binding.root
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment CAPSSummery.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            CAPSSummery().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+    fun init(){
+       binding.Last7Days.text  =   Last7Days
+       binding.Last30Days.text =  Last30Days
+       binding.Last90Days.text =  Last90Days
+       binding.Last180Days.text = Last180Days
+
     }
+
+
 }

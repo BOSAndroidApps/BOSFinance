@@ -1,4 +1,4 @@
-package com.example.theemiclub
+package com.example.bosmobilefinance
 
 import org.junit.Test
 

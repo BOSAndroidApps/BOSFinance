@@ -1,4 +1,4 @@
-package com.example.theemiclub.ui.slideshow.ui.view.activity.retailer
+package com.example.bosmobilefinance.ui.slideshow.ui.view.activity.retailer
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,30 +7,24 @@ import android.view.View
 import android.widget.RadioButton
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
-import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.core.view.WindowInsetsControllerCompat
 import androidx.lifecycle.ViewModelProvider
 import com.bos.payment.appName.network.RetrofitClient
-import com.example.theemiclub.R
-import com.example.theemiclub.databinding.ActivityIdverificationPageBinding
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass.AadharBackImageUri
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass.AadharFrontImageUri
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass.AadharNumber
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass.AadharTransactionIdNo
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass.CheckOnlineOrOffline
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass.PanFrontImageUri
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass.PanNumber
-import com.example.theemiclub.ui.slideshow.data.model.loginsignup.verification.AadharVerificationReq
-import com.example.theemiclub.ui.slideshow.data.repository.AuthRepository
-import com.example.theemiclub.ui.slideshow.data.viewModelFactory.CommonViewModelFactory
-import com.example.theemiclub.ui.slideshow.localdb.SharedPreference
-import com.example.theemiclub.ui.slideshow.ui.view.activity.retailer.AadharCardWebViewDIGILockerPage.Companion.digilockerLink
-import com.example.theemiclub.ui.slideshow.ui.viewmodel.AuthenticationViewModel
-import com.example.theemiclub.ui.slideshow.utils.ApiStatus
+import com.example.bosmobilefinance.R
+import com.example.bosmobilefinance.databinding.ActivityIdverificationPageBinding
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass.AadharTransactionIdNo
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass.CheckOnlineOrOffline
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass.PanFrontImageUri
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass.PanNumber
+import com.example.bosmobilefinance.ui.slideshow.data.model.loginsignup.verification.AadharVerificationReq
+import com.example.bosmobilefinance.ui.slideshow.data.repository.AuthRepository
+import com.example.bosmobilefinance.ui.slideshow.data.viewModelFactory.CommonViewModelFactory
+import com.example.bosmobilefinance.ui.slideshow.localdb.SharedPreference
+import com.example.bosmobilefinance.ui.slideshow.ui.view.activity.retailer.AadharCardWebViewDIGILockerPage.Companion.digilockerLink
+import com.example.bosmobilefinance.ui.slideshow.ui.viewmodel.AuthenticationViewModel
+import com.example.bosmobilefinance.ui.slideshow.utils.ApiStatus
 import com.google.gson.Gson
 
 class IDVerificationPage : AppCompatActivity() {
@@ -66,6 +60,7 @@ class IDVerificationPage : AppCompatActivity() {
     }
 
     fun setOnClickListner() {
+
         binding.back.setOnClickListener {
             onBackPressed()
         }
@@ -104,6 +99,9 @@ class IDVerificationPage : AppCompatActivity() {
 
         }
 
+        binding.cibilcardlayout.setOnClickListener {
+            startActivity(Intent(this@IDVerificationPage, CivilReportForm::class.java))
+        }
 
         binding.radioGroup.setOnCheckedChangeListener { group, checkedId ->
 
@@ -134,6 +132,7 @@ class IDVerificationPage : AppCompatActivity() {
             }
 
         }
+
     }
 
 

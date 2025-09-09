@@ -1,4 +1,4 @@
-package com.example.theemiclub.ui.slideshow.ui.view.activity.retailer
+package com.example.bosmobilefinance.ui.slideshow.ui.view.activity.retailer
 
 import android.app.Activity
 import android.content.Context
@@ -9,21 +9,15 @@ import android.webkit.JavascriptInterface
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
-import androidx.core.content.ContextCompat.startActivity
 import androidx.core.view.ViewCompat
-import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.core.view.WindowInsetsControllerCompat
-import com.example.theemiclub.R
-import com.example.theemiclub.databinding.ActivityAadharCardWebViewDigilockerPageBinding
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass.AadharBackImageUri
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass.AadharFrontImageUri
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass.AadharNumber
-import com.example.theemiclub.ui.slideshow.constant.ConstantClass.AadharTransactionIdNo
+import com.example.bosmobilefinance.databinding.ActivityAadharCardWebViewDigilockerPageBinding
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass.AadharBackImageUri
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass.AadharFrontImageUri
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass.AadharNumber
+import com.example.bosmobilefinance.ui.slideshow.constant.ConstantClass.AadharTransactionIdNo
 
 class AadharCardWebViewDIGILockerPage : AppCompatActivity() {
 
